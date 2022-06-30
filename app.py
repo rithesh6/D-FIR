@@ -1,9 +1,9 @@
 import streamlit as st
 from pytezos import pytezos
 
-pytezos = pytezos.using(shell='https://ithacanet.smartpy.io',
-                        key='edskRgyeUCtxnzNeu2k7iQvG3mAo8ZxzeBftJJCe6nkHh93nwUXqomQvGmMptHKFceM3npexh59M3Q4CNQVrGFg4FrVQ482KCf')
-contract = pytezos.contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
+pytezos = pytezos.using(shell='https://jakartanet.smartpy.io',
+                        key='edskRv1Ac5psqCpJ5GVkYbbnJgbjmhGHU6axTVezNK41Yj8XUBNhmswzcg75MMrTDkUvBagUS8kfSsDbD2T1tafSgmsgkEaR24')
+contract = pytezos.contract('KT1P1kj39a24DLFDuZpq3kLuRrXbMEjfVkcT')
 
 
 def welcome():
@@ -37,9 +37,9 @@ def addFIR():
       "Complaint: Briefly lay down the facts regarding the incident reported in an accurate way")
 
   if st.button("Register FIR"):
-    a = pytezos.using(shell='https://ithacanet.smartpy.io',
-                      key='edskRgyeUCtxnzNeu2k7iQvG3mAo8ZxzeBftJJCe6nkHh93nwUXqomQvGmMptHKFceM3npexh59M3Q4CNQVrGFg4FrVQ482KCf')
-    contract = a.contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
+    a = pytezos.using(shell='https://jakartanet.smartpy.io',
+                      key='edskRv1Ac5psqCpJ5GVkYbbnJgbjmhGHU6axTVezNK41Yj8XUBNhmswzcg75MMrTDkUvBagUS8kfSsDbD2T1tafSgmsgkEaR24')
+    contract = a.contract('KT1P1kj39a24DLFDuZpq3kLuRrXbMEjfVkcT')
 
     contract.addFir(Complaint=Complaint, DisPs=DisPs, Dirps=Dirps, Dow=Dow, Date1=Date1, Doa=Doa, pop=pop, time=time, NoO=NoO, Section=Section, age=age,
                     gender=gender, name=name, fathersName=fathersName, PhoneNumber=PhoneNumber, address=address, uid=uid).with_amount(0).as_transaction().fill().sign().inject()
@@ -49,7 +49,7 @@ def ViewFirData():
   uid = st.text_input("Enter Unique aadhar Id")
   if st.button("View Records"):
     usds = pytezos.using(
-        shell='https://ithacanet.smartpy.io').contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
+        shell='https://jakartanet.smartpy.io').contract('KT1P1kj39a24DLFDuZpq3kLuRrXbMEjfVkcT')
     st.text("Name: " + usds.storage[uid]['name']())
     st.text("Father's Name:"+usds.storage[uid]['fathersName']())
     st.text("Phone Number: "+str(usds.storage[uid]['PhoneNumber']()))
