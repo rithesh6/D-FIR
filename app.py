@@ -88,26 +88,15 @@ def ViewFirData():
 def main():
     
     st.set_page_config(page_title="Decentralised FIR Records")
-    st.markdown("""
-        <style>
-        *{
-            background-color:#000!important;
-            color: #fff!important;
-        }
-        .css-10trblm{
-            color: #fff;
-            text-align:center
-            }
-        </stye>
-        """,
-        unsafe_allow_html=True
-    )
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
     
 
     st.title("Blockchain Based FIR Records")
     st.markdown(
         '''<div style="padding:10px">
-                    <h1 style='text-align: center; color: #fff;font-family:Helvetica'><strong>
+        <img src='./download.jpeg'>
+                    <h1 style='text-align: center;font-family:Helvetica'><strong>
                     D-FIR</strong></h1></div><br>''',
         unsafe_allow_html=True,
     )

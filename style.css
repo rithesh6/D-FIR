@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000!important;
+    color: #fff !important;
+    font-family: 'Gantari', sans-serif!important;
+}
+
+.css-10trblm{
+    text-align: center;
+}
+
+.st-av{
+    cursor: pointer;
+}
+.st-dn{
+    caret-color: #fff!important;
+}
+
+.step-up,.step-down{
+    width: 40px;
+    height: 40px;
+    border-radius: 21px!important  ;
+    border: 2px solid  #fff;
+    margin:0 8px;
+}
+
+.css-u3o8cc{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    border-radius: 5px!important;
+}
+
+.css-1cpxqw2{
+    border:1px solid #fff!important;
+    margin-top: 15px;
+}
+
+.css-1siy2j7{
+    border-right: 1px solid #fff!important;
+}
+footer{
+    display: none!important;
+}
