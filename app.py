@@ -1,6 +1,7 @@
 import streamlit as st
 from pytezos import pytezos
 
+
 pytezos = pytezos.using(shell='https://jakartanet.smartpy.io',
                         key='edskRv1Ac5psqCpJ5GVkYbbnJgbjmhGHU6axTVezNK41Yj8XUBNhmswzcg75MMrTDkUvBagUS8kfSsDbD2T1tafSgmsgkEaR24')
 contract = pytezos.contract('KT1P1kj39a24DLFDuZpq3kLuRrXbMEjfVkcT')
@@ -50,46 +51,64 @@ def ViewFirData():
   if st.button("View Records"):
     usds = pytezos.using(
         shell='https://jakartanet.smartpy.io').contract('KT1P1kj39a24DLFDuZpq3kLuRrXbMEjfVkcT')
-    st.text("Name: " + usds.storage[uid]['name']())
-    st.text("Father's Name:"+usds.storage[uid]['fathersName']())
-    st.text("Phone Number: "+str(usds.storage[uid]['PhoneNumber']()))
-    st.text("Age: "+str(usds.storage[uid]['age']()))
+    try:
+        st.text("Name: " + usds.storage[uid]['name']())
+        st.text("Father's Name:"+usds.storage[uid]['fathersName']())
+        st.text("Phone Number: "+str(usds.storage[uid]['PhoneNumber']()))
+        st.text("Age: "+str(usds.storage[uid]['age']()))
 
-    st.text("Gender: "+usds.storage[uid]['gender']())
+        st.text("Gender: "+usds.storage[uid]['gender']())
 
-    st.text("Address: "+usds.storage[uid]['address']())
+        st.text("Address: "+usds.storage[uid]['address']())
 
-    st.text("Distance from police station where the incident took place: " +
-            usds.storage[uid]['DisPs']())
+        st.text("Distance from police station where the incident took place: " +
+                usds.storage[uid]['DisPs']())
 
-    st.text("Direction from police station where the incident took place: " +
-            usds.storage[uid]['Dirps']())
+        st.text("Direction from police station where the incident took place: " +
+                usds.storage[uid]['Dirps']())
 
-    st.text("Date: "+usds.storage[uid]['Date1']())
+        st.text("Date: "+usds.storage[uid]['Date1']())
 
-    st.text("Time: "+usds.storage[uid]['time']())
+        st.text("Time: "+usds.storage[uid]['time']())
 
-    st.text("Nature of offence: "+usds.storage[uid]['NoO']())
+        st.text("Nature of offence: "+usds.storage[uid]['NoO']())
 
-    st.text("Section applicable: "+usds.storage[uid]['Section']())
+        st.text("Section applicable: "+usds.storage[uid]['Section']())
 
-    st.text("Particulars of the property: "+usds.storage[uid]['pop']())
+        st.text("Particulars of the property: "+ usds.storage[uid]['pop']())
 
-    st.text("Description of the accused: "+usds.storage[uid]['Doa']())
+        st.text("Description of the accused: "+usds.storage[uid]['Doa']())
 
-    st.text("Witness: "+usds.storage[uid]['Dow']())
-    st.text("Complaint: "+usds.storage[uid]['Complaint']())
+        st.text("Witness: "+usds.storage[uid]['Dow']())
+        st.text("Complaint: "+usds.storage[uid]['Complaint']())
 
+    except:
+        st.text("OOPS No such data found !")
 
 def main():
-
+    
     st.set_page_config(page_title="Decentralised FIR Records")
+    st.markdown("""
+        <style>
+        *{
+            background-color:#000!important;
+            color: #fff!important;
+        }
+        .css-10trblm{
+            color: #fff;
+            text-align:center
+            }
+        </stye>
+        """,
+        unsafe_allow_html=True
+    )
+    
 
     st.title("Blockchain Based FIR Records")
     st.markdown(
-        '''<div style="background-color:#e1f0fa;padding:10px">
-                    <h1 style='text-align: center; color: #304189;font-family:Helvetica'><strong>
-                    SatyaVachan</strong></h1></div><br>''',
+        '''<div style="padding:10px">
+                    <h1 style='text-align: center; color: #fff;font-family:Helvetica'><strong>
+                    D-FIR</strong></h1></div><br>''',
         unsafe_allow_html=True,
     )
 
