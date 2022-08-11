@@ -8,9 +8,34 @@
     color: #fff !important;
     font-family: 'Gantari', sans-serif!important;
 }
+body{
+    /* background-image: url("https://wallpapercave.com/wp/wp2337019.jpg")!important; */
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div{
+    width: 100vw;
+}
+
+.css-12oz5g7{
+    width: 100%;
+    padding: 0!important;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div > div:nth-child(1) > div > div:nth-child(3) > iframe{
+    width: 100vw;
+    height: 100vh;
+}
+
+.css-yhwc6k{
+    width: 100vw;
+}
 
 .css-10trblm{
+    display: none;
     text-align: center;
+}
+.css-11lmpti{
+    /* align-items: center; */
 }
 
 .st-av{
@@ -47,4 +72,61 @@ input{
 }
 footer{
     display: none!important;
+}
+
+/* .block-container{
+    position: absolute!important;
+    right: 0!important;
+} */
+
+body > div:nth-child(6) > div{
+    display: none;
+}
+
+body > div:nth-child(4) > div > canvas:nth-child(1){
+    display: none!important;
+}
+.css-1v3fvcr{
+    align-items: flex-start;
+}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div{
+    width: 340px;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div > div:nth-child(1) > div{
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+.css-1qj2by8{
+    width: 700px;
+    margin: auto;
+}
+.stNumberInput{
+    width: 700px!important;
+}
+
+.element-container{
+    width: 700px;
+    /* padding-left: 100px; */
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div{
+    width: 700px;
+    /* margin: auto; */
+}
+.css-459c3p{
+    margin-left: 700px
+}
+@media (max-width:700px) {
+    .css-459c3p{
+        margin-left:20px;
+    }
+}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div > div:nth-child(1) > div > div:nth-child(3){
+    margin: 0;
+}
+
+egzxvld2{
+    margin: auto;
 }

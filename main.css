@@ -24,7 +24,7 @@ button {
 
 #info {
     position: absolute;
-    top: 0px;
+    top: 150px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -93,4 +93,18 @@ select {
     background-color: #f00;
     margin-top: 20px;
     padding: 10px;
+}
+
+body > div:nth-child(6) > div{
+    display: none;
+}
+
+body > div:nth-child(6) > canvas{
+    margin: auto;
+    width: 500px!important;
+    height: 200px!important;
+}
+
+body > div:nth-child(4) > div > canvas:nth-child(1){
+    display: none!important;
 }

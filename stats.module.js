@@ -118,7 +118,7 @@ Stats.Panel = function (name, fg, bg) {
     var canvas = document.createElement('canvas');
     canvas.width = WIDTH;
     canvas.height = HEIGHT;
-    canvas.style.cssText = 'width:80px;height:48px';
+    canvas.style.cssText = 'width:80px;height:48px;';
 
     var context = canvas.getContext('2d');
     context.font = 'bold ' + (9 * PR) + 'px Helvetica,Arial,sans-serif';

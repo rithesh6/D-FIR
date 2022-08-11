@@ -1,5 +1,6 @@
 import streamlit as st
 from pytezos import pytezos
+import streamlit.components.v1 as components
 
 
 pytezos = pytezos.using(shell='https://jakartanet.smartpy.io',
@@ -93,31 +94,27 @@ def main():
     
 
     st.title("Blockchain Based FIR Records")
-    st.markdown(
-        '''<div style="padding:10px">
-        <img src='./download.jpeg'>
-                    <h1 style='text-align: center;font-family:Helvetica'><strong>
-                    D-FIR</strong></h1></div><br>''',
-        unsafe_allow_html=True,
-    )
+
+    HtmlFile = open("af.html", 'r', encoding='utf-8')
+    source_code = HtmlFile.read() 
+    components.html(source_code)
+    # st.markdown(
+    #     '''<div>VADDA</div
+    #     ''',
+    #     unsafe_allow_html=True,
+    # )
 
     st.markdown(
-        """<p style='text-align: center;font-family:Helvetica;'>
+        """<p style='text-align: center;font-family:Helvetica;font-size:30px'>
                    This project greatly decreases any chances of misuse or the manipulation of the FIR Records</p>""",
+            
         unsafe_allow_html=True,
     )
 
-    st.markdown(
-        """<h3 style='text-align: center; color: white; font-family:'Lato';font-family:Helvetica;'>
-                   The proposed solution is going to help our nation in decreasing the crime related to the data manipulation in FIR records and it will decrease the corruption related to manipulation of FIR records.
-                   </h3>""",
-        unsafe_allow_html=True,
-    )
+    st.title("Choose your entry point")
+    st.markdown("Select the entry point accordingly:")
 
-    st.sidebar.title("Choose your entry point")
-    st.sidebar.markdown("Select the entry point accordingly:")
-
-    algo = st.sidebar.selectbox(
+    algo = st.selectbox(
         "Select the Option", options=[
             "Register FIR",
             "View FIR Data"
