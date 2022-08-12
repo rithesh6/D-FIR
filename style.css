@@ -1,77 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000!important;
+    background-color: #000 !important;
     color: #fff !important;
-    font-family: 'Gantari', sans-serif!important;
-}
-body{
-    /* background-image: url("https://wallpapercave.com/wp/wp2337019.jpg")!important; */
+    font-family: 'Gantari', sans-serif !important;
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div{
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div {
     width: 100vw;
 }
 
-.css-12oz5g7{
+.css-12oz5g7 {
     width: 100%;
     padding: 0;
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div > div:nth-child(1) > div > div:nth-child(3) > iframe{
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(3)>iframe {
     width: 100vw;
     height: 100vh;
 }
 
-.css-yhwc6k{
+.css-yhwc6k {
     width: 100vw;
 }
 
-.css-10trblm{
+.css-10trblm {
     display: none;
     text-align: center;
 }
-.css-11lmpti{
-    /* align-items: center; */
-}
 
-.st-av{
+.st-av {
     cursor: pointer;
 }
-.st-dn{
-    caret-color: #fff!important;
+
+.st-dn {
+    caret-color: #fff !important;
 }
 
-.step-up,.step-down{
+.step-up,
+.step-down {
     width: 40px;
     height: 40px;
-    border-radius: 21px!important  ;
-    border: 2px solid  #fff;
-    margin:0 8px;
+    border-radius: 21px !important;
+    border: 2px solid #fff;
+    margin: 0 8px;
 }
 
-.css-u3o8cc{
+.css-u3o8cc {
     display: flex;
     align-items: center;
 }
 
-input{
-    border-radius: 5px!important;
+input {
+    border-radius: 5px !important;
 }
 
-.css-1cpxqw2{
-    border:1px solid #fff!important;
+.css-1cpxqw2 {
+    border: 1px solid #fff !important;
     margin-top: 15px;
 }
 
-.css-1siy2j7{
-    border-right: 1px solid #fff!important;
+.css-1siy2j7 {
+    border-right: 1px solid #fff !important;
 }
-footer{
-    display: none!important;
+
+footer {
+    display: none !important;
+}
+
+.css-1fl2ds8 {
+    width: 80vw;
+    margin: auto;
+    /* chg */
+}
+
+.css-k1vhr4 {
+    align-items: flex-start !important;
+    /* chg */
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(7)>div>div {
+    width: 100vw;
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(6)>div {
+    width: 80vw;
+    margin: auto;
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(7)>div {
+    width: 80vw;
+    margin: auto;
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(11)>div,
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(12)>div,
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(15)>div,
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(18)>div,
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(28)>div,
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(4)>div {
+    width: 80vw;
+    margin: auto;
 }
 
 /* .block-container{
@@ -79,54 +112,62 @@ footer{
     right: 0!important;
 } */
 
-body > div:nth-child(6) > div{
+body>div:nth-child(6)>div {
     display: none;
 }
 
-body > div:nth-child(4) > div > canvas:nth-child(1){
-    display: none!important;
-}
-.css-1v3fvcr{
-    align-items: flex-start;
-}
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div{
-    width: 700px;
+body>div:nth-child(4)>div>canvas:nth-child(1) {
+    display: none !important;
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div > div:nth-child(1) > div{
+.css-1v3fvcr {
+    align-items: flex-start;
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div {
+    width: auto;
+    /* chg */
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section.main.css-1v3fvcr.egzxvld3>div>div:nth-child(1)>div {
     width: 700px;
     align-items: center;
     justify-content: center;
 }
-.css-1qj2by8{
+
+.css-1qj2by8 {
     width: 700px;
     margin: auto;
 }
-.stNumberInput{
-    width: 700px!important;
+
+.stNumberInput {
+    width: 700px !important;
 }
 
-.element-container{
+.element-container {
     width: 700px;
     /* padding-left: 100px; */
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div{
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section.main.css-1v3fvcr.egzxvld3>div {
     width: 700px;
     /* margin: auto; */
 }
-.css-459c3p{
+
+.css-459c3p {
     margin-left: 700px
 }
+
 @media (max-width:700px) {
-    .css-459c3p{
-        margin-left:20px;
+    .css-459c3p {
+        margin-left: 20px;
     }
 }
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-1v3fvcr.egzxvld3 > div > div:nth-child(1) > div > div:nth-child(3){
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section.main.css-1v3fvcr.egzxvld3>div>div:nth-child(1)>div>div:nth-child(3) {
     margin: 0;
 }
 
-egzxvld2{
+egzxvld2 {
     margin: auto;
 }
