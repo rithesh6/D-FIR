@@ -7,6 +7,7 @@
     background-color: #000 !important;
     color: #fff !important;
     font-family: 'Gantari', sans-serif !important;
+    /* font-size:18px; */
 }
 
 
@@ -15,7 +16,7 @@
 }
 
 #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div > div:nth-child(1),#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div > div:nth-child(1) > div{
-    width:100vw
+    width:100vw!important;
 }
 
 .css-12oz5g7 {
@@ -77,7 +78,7 @@ footer {
 }
 
 .css-1fl2ds8 {
-    width: 80vw;
+    width: 99vw;
     margin: auto;
     /* chg */
 }
@@ -86,18 +87,18 @@ footer {
     align-items: flex-start !important;
     /* chg */
 }
-
+/* 
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(7)>div>div {
     width: 100vw;
-}
+} */
 
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(6)>div {
-    width: 80vw;
+    width: 99vw!important;
     margin: auto;
 }
 
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(7)>div {
-    width: 80vw;
+    width: 99vw!important;
     margin: auto;
 }
 
@@ -108,7 +109,7 @@ footer {
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(28)>div,
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div>div:nth-child(1)>div>div:nth-child(4)>div ,
 #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div > div:nth-child(1) > div > div:nth-child(21) > div{
-    width: 80vw!important;
+    width: 99vw!important;
     margin: auto;
 }
 
@@ -146,25 +147,12 @@ body>div:nth-child(4)>div>canvas:nth-child(1) {
 }
 
 
-.element-container {
-    width: 700px;
-    /* padding-left: 100px; */
-}
-
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section.main.css-1v3fvcr.egzxvld3>div {
     width: 700px;
     /* margin: auto; */
 }
 
-.css-459c3p {
-    margin-left: 700px
-}
 
-@media (max-width:700px) {
-    .css-459c3p {
-        margin-left: 20px;
-    }
-}
 
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section.main.css-1v3fvcr.egzxvld3>div>div:nth-child(1)>div>div:nth-child(3) {
     margin: 0;

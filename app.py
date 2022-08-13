@@ -111,10 +111,10 @@ def main():
         unsafe_allow_html=True,
     )
 
-    st.title("Choose your entry point")
-    st.markdown("Select the entry point accordingly:")
+    st.sidebar.title("Choose your entry point")
+    st.sidebar.markdown("Select the entry point accordingly:")
 
-    algo = st.selectbox(
+    algo = st.sidebar.selectbox(
         "Select the Option", options=[
             "Register FIR",
             "View FIR Data"
